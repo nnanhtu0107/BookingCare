@@ -4,3 +4,4 @@ FullStack SERN
 2. Express js
 3. React js
 4. Node js
+connect MySQL Database with Sequelize
