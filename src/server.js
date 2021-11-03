@@ -1,8 +1,8 @@
 import express from "express";
 import bodyParser from "body-parser";
-import viewEngine from "./config/viewEngine"
-import connetDB from "./config/connectDB";
+import viewEngine from "./config/viewEngine";
 import initWebRouter from './route/web';
+import connetDB from "./config/connectDB";
 require('dotenv').config();
 let app = express();
 //config app
