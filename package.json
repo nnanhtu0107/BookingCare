@@ -1,7 +1,7 @@
 {
   "name": "bookingcare",
   "version": "1.0.0",
-  "description": "",
+  "description": "FullStack SERN\r 1. SQL\r 2. Express js\r 3. React js\r 4. Node js",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,20 +9,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nnanhtu0107/BookingCare.git"
+    "url": "git+https://github.com/nnanhtu0107/Booking-Care.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nnanhtu0107/BookingCare/issues"
+    "url": "https://github.com/nnanhtu0107/Booking-Care/issues"
   },
-  "homepage": "https://github.com/nnanhtu0107/BookingCare#readme",
+  "homepage": "https://github.com/nnanhtu0107/Booking-Care.git",
   "dependencies": {
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
-    "mysql2": "^2.2.5",
+    "mysql2": "^2.3.0",
     "sequelize": "^6.6.2"
   },
   "devDependencies": {
