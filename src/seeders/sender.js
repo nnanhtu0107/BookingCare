@@ -7,10 +7,11 @@ module.exports = {
     password: '123456', 
     firstName: 'Tudev',
     lastName: 'Nguyen',
-    address: 'USA',
+     address: 'USA',
+    phonenumber: '0787538589',
     gender: 1,
-    typeRole: 'ROLE',
-     keyRole: 'R1',
+    image: '',
+    keyRole: 'R1',
     
     createdAt: new Date(),
     updatedAt: new Date()
