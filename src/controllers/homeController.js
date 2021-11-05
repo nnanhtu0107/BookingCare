@@ -18,6 +18,40 @@ let postCRUD = async (req, res) => {
     console.log(message);
     return res.send('post crud from server');
 }
+let displayGetCRUD = async (req, res) => {
+    let data = await CRUDService.getAllUser();
+    return res.render('displayCRUD.ejs', {
+        dataTable: data
+    })
+}
+let getEditCRUD = async (req, res) => {
+    let userId = req.query.id;
+    if (userId) {
+        let userData = await CRUDService.getUserInfoById(userId);
+        return res.render('editCRUD.ejs', {
+            user: userData
+        });
+    } else {
+        return res.send('user not found');
+    }
+}
+let putCRUD = async (req, res) => {
+    let data = req.body;
+    let allUsers = await CRUDService.updateUserData(data);
+    return res.render('displayCRUD.ejs', {
+        dataTable: allUsers
+    })
+    
+}
+let deleteCRUD = async (req, res) => {
+    let id = req.query.id;
+    if (id) {
+         await CRUDService.deleteUserId(id);
+         return res.send('Delete User succeed!')
+    } else {
+        return res.send('User not found!')
+    }
+}
 module.exports = {
-     getHomePage, getCRUD, postCRUD
+     getHomePage, getCRUD, postCRUD, displayGetCRUD, getEditCRUD,putCRUD,deleteCRUD
 }
